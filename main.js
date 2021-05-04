@@ -1,4 +1,5 @@
-import sha256 from 'crypto-js/sha256'
+var sha256 = require("crypto-js/sha256");
+
 data1="BlockChain rock!"
 const dataObject = {
     id:1,
