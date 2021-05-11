@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "46758d23-7d99-4da0-aaff-e143a2a60d45",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET HEIGHT OF THE CHAIN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/block/?height=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"block",
+						""
+					],
+					"query": [
+						{
+							"key": "height",
+							"value": "3",
+							"description": "get the height of the chain"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REQUEST VALIDATION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "SUBMIT A START",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\": \"hellow\",\r\n    \"message\":\"yess\",\r\n    \"signature\":\"sdsdsd\",\r\n    \"start\":{\r\n      \"body\": \"infor of the start\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/submitstar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"submitstar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BLOCK  USING IT HASH",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/blocks/?address=\"0x0000000\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"blocks",
+						""
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "0x0000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST OF TRANSACTIONS OF A GIVEN OWNER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
