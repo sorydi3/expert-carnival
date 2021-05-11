@@ -2,7 +2,7 @@
   "name": "block_chain_nano",
   "description": "You are starting your journey as a Blockchain Developer, this project allows you to demonstrate that you are familiarized with the fundamentals concepts of a Blockchain platform. Concepts like:     - Block     - Blockchain     - Wallet     - Blockchain Identity     - Proof of Existance",
   "version": "1.0.0",
-  "main": "BlockchainController.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
