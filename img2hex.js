@@ -10,6 +10,6 @@ imaHexEncode = new Buffer.from(imgReadBuffer).toString('hex');
 
 
 //DECODE THE IMAGE
-var imgHexDecode = new Buffer(imaHexEncode,'hex');
+var imgHexDecode = new Buffer.alloc(imaHexEncode.length,imgReadBuffer,'hex');
 
 fs.writeFileSync('decodedImage.jpg',imaHexEncode);

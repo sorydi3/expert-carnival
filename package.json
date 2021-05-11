@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sorydi3/expert-carnival/issues"
   },
-  "homepage": "https://github.com/sorydi3/expert-carnival#readme"
+  "homepage": "https://github.com/sorydi3/expert-carnival#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
